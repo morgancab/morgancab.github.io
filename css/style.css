@@ -6355,7 +6355,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #0BCEAF !important;
+  background-color: #0bcea1 !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -7850,6 +7850,8 @@ button.bg-dark:focus {
 .py-5 {
   padding-top: 3rem !important;
 }
+
+
 
 .pr-5,
 .px-5 {
@@ -9521,11 +9523,11 @@ button.bg-dark:focus {
 }
 
 .text-white {
-  color: #fff !important;
+  color: #ffffff !important;
 }
 
 .text-primary {
-  color: #0BCEAF !important;
+  color: #0BCEA1 !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -9982,3 +9984,4 @@ h6,
   padding: 0;
   list-style-type: none;
 }
+
