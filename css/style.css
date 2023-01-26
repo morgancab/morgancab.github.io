@@ -6523,7 +6523,7 @@ button.bg-dark:focus {
 }
 
 .rounded {
-  border-radius: 0.25rem !important;
+  border-radius: 0.5rem !important;
 }
 
 .rounded-top {
@@ -6550,9 +6550,14 @@ button.bg-dark:focus {
   border-radius: 0.3rem !important;
 }
 
-.rounded-circle {
+.rounded-circle50 {
   border-radius: 50% !important;
 }
+
+.rounded-circle10 {
+  border-radius: 11% !important;
+}
+
 
 .rounded-pill {
   border-radius: 50rem !important;
@@ -7524,6 +7529,10 @@ button.bg-dark:focus {
 
 .w-75 {
   width: 75% !important;
+}
+
+.w-90 {
+  width: 890% !important;
 }
 
 .w-100 {
