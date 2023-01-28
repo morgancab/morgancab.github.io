@@ -196,6 +196,12 @@ img {
   border-style: none;
 }
 
+.imglogo {
+  vertical-align: middle;
+  border: 1px solid rgba(74, 64, 64, 0.516);
+}
+
+
 svg {
   overflow: hidden;
   vertical-align: middle;
@@ -7519,6 +7525,15 @@ button.bg-dark:focus {
   box-shadow: none !important;
 }
 
+.w-7 {
+  width: 7%  !important;
+   float:left;
+    max-width:143px;
+    height:auto;
+}
+
+
+
 .w-25 {
   width: 25% !important;
 }
@@ -9994,3 +10009,7 @@ h6,
   list-style-type: none;
 }
 
+.zoomlogo:hover {
+  transform: scale(2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+} 
