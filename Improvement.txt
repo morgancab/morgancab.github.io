@@ -9,3 +9,9 @@
 - Add one reference 
 - Complete 1st python project quickly
 - Remove tableau exemple 
+
+#2024
+-Modify the PDF cv-resume when dowload
+- Imporve the text/ paragraph
+- Modify picture
+-Python project
