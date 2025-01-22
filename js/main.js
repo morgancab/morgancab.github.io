@@ -113,6 +113,29 @@
         loop: true,
         items: 1
     });
-    
+
+
+    // Ajout d'animations au défilement
+    document.addEventListener('DOMContentLoaded', () => {
+        // Animation des éléments au scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-visible');
+                }
+            });
+        }, observerOptions);
+
+        // Sélectionner tous les éléments à animer
+        document.querySelectorAll('.portfolio-item, .skill, .qualification').forEach(el => {
+            el.classList.add('fade-in');
+            observer.observe(el);
+        });
+    });
+
 })(jQuery);
 
