@@ -131,9 +131,21 @@
         }, observerOptions);
 
         // Sélectionner tous les éléments à animer
-        document.querySelectorAll('.portfolio-item, .skill, .qualification').forEach(el => {
+        document.querySelectorAll('.portfolio-item, .skill, .qualification, .typed-text-output, .progress, .testimonial-item').forEach(el => {
             el.classList.add('fade-in');
             observer.observe(el);
+        });
+
+        // Animation du titre principal
+        const mainTitle = document.querySelector('.display-3');
+        if (mainTitle) {
+            mainTitle.classList.add('slide-in');
+        }
+
+        // Animation des icônes sociales
+        document.querySelectorAll('.btn-social').forEach((icon, index) => {
+            icon.style.animationDelay = `${index * 0.2}s`;
+            icon.classList.add('pop-in');
         });
     });
 
