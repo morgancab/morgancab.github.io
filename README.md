@@ -9,8 +9,8 @@ Vous pouvez consulter mon portfolio en ligne via le lien suivant :
 
 ## 📊 Suivi des Visites
 
-Les statistiques de visites de mon site sont disponibles grâce à SimpleAnalytics. Vous pouvez les consulter en suivant ce lien :
-[📈 Voir les statistiques de visites](https://dashboard.simpleanalytics.com/morgancab.github.io)
+Les statistiques de visites de mon site sont disponibles grâce à Google Analytics. Vous pouvez les consulter en suivant ce lien :
+[📈 Voir les statistiques de visites](https://analytics.google.com/analytics/web/provision/?authuser=0#/provision/create)
 
 ---
 
