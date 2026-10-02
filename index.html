@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="utf-8">
@@ -31,6 +31,8 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/ui.css" rel="stylesheet">
+    <meta name="theme-color" content="#087f73">
 
     <style>
         #particles-js {
@@ -64,7 +66,7 @@
 </script>
 
 
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
     <script>
         AOS.init({
             duration: 1000,
@@ -91,27 +93,31 @@
                 <a href="#testimonial" class="nav-item nav-link">Références</a>
             </div>
             <a href="mailto:morgan2509@live.fr" class="btn btn-outline-primary d-none d-lg-block">Contact</a>
+            <div class="lang-toggle ml-lg-3 my-3 my-lg-0" role="group" aria-label="Langue / Language">
+                <button type="button" data-lang-option="fr" aria-pressed="true">FR</button>
+                <button type="button" data-lang-option="en" aria-pressed="false">EN</button>
+            </div>
         </div>
     </nav>
     <!-- Navbar End -->
 
 
     <!-- Header Start -->
-    <div class="container-fluid position-relative mb-5" id="home" style="min-height: 70vh;">
+    <div class="container-fluid position-relative" id="home">
         <!-- Particle background -->
-        <div id="particles-js" class="position-absolute w-100 h-100" style="background: linear-gradient(135deg, #0BCEAF 0%, #0f8d8d 100%);"></div>
+        <div id="particles-js" class="position-absolute w-100 h-100" style="background: linear-gradient(135deg, #087f73 0%, #0b6477 55%, #0d3f58 100%);"></div>
         
         <div class="container position-relative" data-aos="fade-down">
-            <div class="row align-items-center" style="padding-top: 90px; padding-bottom: 40px;">
+            <div class="row align-items-center" style="padding-top: 100px; padding-bottom: 60px;">
                 <div class="col-lg-5 py-3 px-5 pl-lg-0 pb-5 pb-lg-0">
                     <div class="profile-visual">
-                        <img class="img-fluid w-100 rounded-circle50 shadow-sm" src="img/profile.jpg" alt="Morgan Cabedoche" onmouseover="this.src='img/profile_smile.jpg';" onmouseout="this.src='img/about.jpg';">
+                        <img class="img-fluid w-100 rounded-circle50 shadow-sm" src="img/profile.jpg" alt="Morgan Cabedoche" onmouseover="this.src='img/profile_smile.jpg';" onmouseout="this.src='img/profile.jpg';">
                     </div>
                 </div>
                 <div class="col-lg-7 text-center text-lg-left">
                     <p class="hero-kicker">Data Analyst • BI Engineer • Data Storyteller</p>
                     <h3 class="text-white font-weight-normal mb-3">Je suis</h3>
-                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Morgan Cabedoche</h1>
+                    <h1 class="display-3 text-uppercase text-primary mb-2">Morgan Cabedoche</h1>
                     <h2 class="typed-text-output d-inline font-weight-lighter text-white"></h2>
                     <div class="typed-text d-none">Business Intelligence, Data Analytics, Data Engineer</div>
 
@@ -124,10 +130,10 @@
                     </div>
 
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-3">
-                        <a href="resume/Resume_Morgan_Cabedoche-.pdf" target="_blank" class="btn btn-outline-light btn-cv mr-3">Télécharger le CV</a>
-                        <a class="btn btn-light btn-social mr-2" target="_blank" href="mailto:morgan2509@live.fr" aria-label="Email"><i class="fa fa-envelope"></i></a>
-                        <a class="btn btn-light btn-social mr-2" target="_blank" href="https://www.linkedin.com/in/morgancab/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn btn-light btn-social mr-2" target="_blank" href="https://github.com/morgancab" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="resume/Resume_Morgan_Cabedoche-.pdf" target="_blank" rel="noopener" class="btn btn-outline-light btn-cv mr-3">Télécharger le CV</a>
+                        <a class="btn btn-light btn-social mr-2" target="_blank" rel="noopener" href="mailto:morgan2509@live.fr" aria-label="Email"><i class="fa fa-envelope"></i></a>
+                        <a class="btn btn-light btn-social mr-2" target="_blank" rel="noopener" href="https://www.linkedin.com/in/morgancab/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-light btn-social mr-2" target="_blank" rel="noopener" href="https://github.com/morgancab" aria-label="GitHub"><i class="fab fa-github"></i></a>
                     </div>
 
                     <div class="hero-metrics">
@@ -225,37 +231,29 @@
     </script>
 
     <!-- About Start -->
-    <div class="container-fluid py-2" id="about">
+    <div class="container-fluid section" id="about">
         <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center" data-aos="fade-up">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
-                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
+            <div class="section-head" data-aos="fade-up">
+                <span class="section-eyebrow">À propos</span>
+                <h2 class="section-title">Qui suis-je ?</h2>
             </div>
             <div class="row align-items-center">
-                <div class="col-lg-7" data-aos="fade-right" data-aos-delay="100">
-                    <h3 class="mb-4 custom-control">Data analyst & Business Intelligence engineer</h3>
-                    <p class="text-justify">I am Morgan, a data analyst specialist, I bring a wealth of experience and knowledge in the field of data science. With over 5 years of intensive studies and 4 years of work experience, I have developed a deep understanding of the data analysis process and honed my skills in various key areas. I am highly proficient in programming languages and tools used for data manipulation and modeling.
-                        <br>
-                        <br>
-                        In addition, my expertise in data visualization and insights generation enables me to effectively communicate complex data insights to both technical and non-technical stakeholders. I have a keen eye for detail and always strive to produce high-quality work that meets and exceeds client expectations.
-                        <br>
-                        <br>
-                        Don't hesitate to contact me !
-                        </p>
-                        <!-- I am a resourceful individual who is not intimidated by challenges and is always looking for innovative ways to get the job done. Whether working independently or as part of a team, I am committed to delivering results that make a tangible impact. I am confident that my combination of technical skills, problem-solving ability, and passion for data science make me a valuable asset to any organization. -->
-                    <div class="row mb-3">
-                        <div class="col-sm-6 py-2"><h6>Localisation: <span class="text-secondary">Paris, France</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Work Experience: <span class="text-secondary">6 Years</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">+33 6 95 33 20 23</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">Morgan2509@live.fr</span></h6></div>
-                        <div class=" col-10 text-center py-3 mb-2 "> 
-                             <a href="mailto:morgan2509@live.fr" class="btn btn-outline-primary">Contact Me</a>
-                        </div>
+                <div class="col-lg-7 mb-5 mb-lg-0" data-aos="fade-right" data-aos-delay="100">
+                    <h3 class="about-title">Data analyst &amp; Business Intelligence engineer</h3>
+                    <p>I am Morgan, a data analyst specialist, I bring a wealth of experience and knowledge in the field of data science. With over 5 years of intensive studies and 6 years of work experience, I have developed a deep understanding of the data analysis process and honed my skills in various key areas. I am highly proficient in programming languages and tools used for data manipulation and modeling.</p>
+                    <p>In addition, my expertise in data visualization and insights generation enables me to effectively communicate complex data insights to both technical and non-technical stakeholders. I have a keen eye for detail and always strive to produce high-quality work that meets and exceeds client expectations.</p>
+                    <div class="info-grid">
+                        <div class="info-card"><i class="fa-solid fa-location-dot"></i><div><small>Localisation</small><span>Paris, France</span></div></div>
+                        <div class="info-card"><i class="fa-solid fa-briefcase"></i><div><small>Expérience</small><span>6 ans</span></div></div>
+                        <a class="info-card" href="tel:+33695332023"><i class="fa-solid fa-phone"></i><div><small>Téléphone</small><span>+33 6 95 33 20 23</span></div></a>
+                        <a class="info-card" href="mailto:morgan2509@live.fr"><i class="fa-solid fa-envelope"></i><div><small>Email</small><span>morgan2509@live.fr</span></div></a>
                     </div>
-                       
+                    <a href="mailto:morgan2509@live.fr" class="btn btn-brand">Me contacter</a>
                 </div>
-                <div class="col-lg-5 pb-4 pb-lg-0" data-aos="fade-left" data-aos-delay="200">
-                    <img class="img-fluid rounded w-90 rounded-circle10" src="img/profile.jpg" alt="">
+                <div class="col-lg-5" data-aos="fade-left" data-aos-delay="200">
+                    <div class="about-photo">
+                        <img src="img/about.jpg" alt="Morgan Cabedoche" loading="lazy">
+                    </div>
                 </div>
             </div>
         </div>
@@ -263,102 +261,115 @@
     <!-- About End -->
 
     <!-- Qualification Start -->
-    <div class="container-fluid py-5" id="qualification">
+    <div class="container-fluid section section-alt" id="qualification">
         <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center" data-aos="fade-up">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
+            <div class="section-head" data-aos="fade-up">
+                <span class="section-eyebrow">Parcours</span>
+                <h2 class="section-title">Formation &amp; expérience</h2>
             </div>  
             <div class="row align-items-start">
                 <div class="col-lg-6 " data-aos="fade-right" data-aos-delay="100">
-                    <h3 class="mb-4">My Education</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <a target=”_blank” href="https://im2ag.univ-grenoble-alpes.fr/parcours-statistique-et-science-des-donnees-ssd-/master-mathematiques-et-applications-parcours-statistique-et-science-des-donnees-ssd--111160.kjsp">
-                                <img  class="fartext-primary position-absolute w-7 rounded-circle10 imglogo zoomlogo "  style="top: 2px; left: -8%;"src="img/uga.jpg" ></img >
+                    <h3 class="sub-title"><i class="fa-solid fa-graduation-cap"></i>Formation</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <a target="_blank" rel="noopener" href="https://im2ag.univ-grenoble-alpes.fr/parcours-statistique-et-science-des-donnees-ssd-/master-mathematiques-et-applications-parcours-statistique-et-science-des-donnees-ssd--111160.kjsp">
+                                <img class="timeline-logo" src="img/uga.jpg" alt="Université Grenoble Alpes" loading="lazy">
                             </a>
                                 <h5 class="font-weight-bold mb-1">Master mathematics and application</h5>
-                            <p class="mb-2"><strong>Université Grenoble Alpes</strong> | <small>2019 - 2021</small></p>
-                            <p class ="text-justify"> This program teaches students to Master statistical and programming tools for the analysis of large
+                            <p class="timeline-meta"><strong>Université Grenoble Alpes</strong> | <small>2019 - 2021</small></p>
+                            <p> This program teaches students to Master statistical and programming tools for the analysis of large
                                 databases while deepening statistical and machine learning concepts</p>
                         </div>
-                        <div class="position-relative mb-4">
-                            <a target=”_blank” href="https://www.hw.ac.uk/uk/study/undergraduate/combined-studies-bsc.htm">
-                                <img  class="fartext-primary position-absolute w-7 rounded-circle10 zoomlogo" src="img/Heriot.jpg" style="top: 2px; left: -8%;"></img >
+                        <div class="timeline-item">
+                            <a target="_blank" rel="noopener" href="https://www.hw.ac.uk/uk/study/undergraduate/combined-studies-bsc.htm">
+                                <img class="timeline-logo" src="img/Heriot.jpg" alt="Heriot-watt University" loading="lazy">
                             </a>
                             <h5 class="font-weight-bold mb-1">Bachelor of Sciences</h5>
-                            <p class="mb-2"><strong>Heriot-watt University</strong> | <small>2018 - 2019</small></p>
-                            <p class ="text-justify">This degree covers theoretical and applied elements of modern statistics, and provides training and 
+                            <p class="timeline-meta"><strong>Heriot-watt University</strong> | <small>2018 - 2019</small></p>
+                            <p>This degree covers theoretical and applied elements of modern statistics, and provides training and 
                                 practical experience in modelling, analysing and interpreting real data required in the economy, industry 
                                 and research.</p>
                         </div>
-                        <div class="position-relative mb-4">
-                            <a target=”_blank” href="https://www.univ-ubs.fr/fr/formation-initiale-continue/formations/licence-DC/sciences-technologies-sante-STS/licence-statistique-3SMS00_217.html#:~:text=La%20sp%C3%A9cialisation%20Statistique%20de%20la,web%20de%20la%20licence%20Statistique.">
-                                <img  class="fartext-primary position-absolute w-7  rounded-circle10 imglogo zoomlogo" src="img/ubs.jpg" style="top: 2px; left: -8%;"></img >
+                        <div class="timeline-item">
+                            <a target="_blank" rel="noopener" href="https://www.univ-ubs.fr/fr/formation-initiale-continue/formations/licence-DC/sciences-technologies-sante-STS/licence-statistique-3SMS00_217.html#:~:text=La%20sp%C3%A9cialisation%20Statistique%20de%20la,web%20de%20la%20licence%20Statistique.">
+                                <img class="timeline-logo" src="img/ubs.jpg" alt="Université de Bretagne Sud" loading="lazy">
                             </a>
                                 <h5 class="font-weight-bold mb-1">Bachelor in Statistics</h5>
-                            <p class="mb-2"><strong>Université de Bretagne Sud</strong> | <small>2018 - 2019</small></p>
-                            <p class ="text-justify"> The objective of this Bachelor in Statistics is to acquire skills that cover 
+                            <p class="timeline-meta"><strong>Université de Bretagne Sud</strong> | <small>2018 - 2019</small></p>
+                            <p> The objective of this Bachelor in Statistics is to acquire skills that cover 
                                 the needs of companies in the field of statistical and computer processing of information.</p>
                         </div>
-                        <div class="position-relative mb-4">
-                            <a target=”_blank” href="https://www.iutvannes.fr/b-u-t-science-des-donnees/">
-                                <img  class="fartext-primary position-absolute w-7  rounded-circle10 imglogo zoomlogo" src="img/iut.jpg" style="top: 2px; left: -8%;"></img >
+                        <div class="timeline-item">
+                            <a target="_blank" rel="noopener" href="https://www.iutvannes.fr/b-u-t-science-des-donnees/">
+                                <img class="timeline-logo" src="img/iut.jpg" alt="IUT De Vannes" loading="lazy">
                             </a>
                             <h5 class="font-weight-bold mb-1">BTEC Higher National Diploma in Statistics</h5>
-                            <p class="mb-2"><strong> IUT De Vannes</strong> | <small>2016 - 2018</small></p>
-                            <p class ="text-justify">The objective of this program is to train technicians specializing in statistics 
+                            <p class="timeline-meta"><strong> IUT De Vannes</strong> | <small>2016 - 2018</small></p>
+                            <p>The objective of this program is to train technicians specializing in statistics 
                                 and business intelligence, capable of helping decision-makers adapt their strategy</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
-                    <h3 class="mb-4">My Expericence</h3> 
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <a target="_blank" href="https://www.kolecto.fr/">
-                                <img  class="fartext-primary position-absolute w-7  rounded-circle10 zoomlogo" src="img/kolecto.png" alt="Kolecto" style="top: 2px; left: -8%;">
+                    <h3 class="sub-title"><i class="fa-solid fa-briefcase"></i>Expérience</h3> 
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <a target="_blank" rel="noopener" href="https://www.kolecto.fr/">
+                                <img class="timeline-logo" src="img/kolecto.png" alt="Kolecto" loading="lazy">
                             </a>
                             <h5 class="font-weight-bold mb-1">Senior Data Analyst</h5>
-                            <p class="mb-2"><strong>Kolecto</strong> | <small>Since October 2025 · Paris, France</small></p>
-                            <ul class="text-justify pl-3 mb-0">
+                            <p class="timeline-meta"><strong>Kolecto</strong> | <small>Since October 2025 · Paris, France</small></p>
+                            <ul class="timeline-list">
                                 <li>Led data strategy for Acquisition, Sales and Finance teams.</li>
                                 <li>Actively contributed to growing the client base from 3,000 to hundreds of thousands since arriving.</li>
                                 <li>Designed and deployed qualified lead acquisition models, optimising targeting and reducing cost per lead.</li>
                             </ul>
                         </div>
-                        <div class="position-relative mb-4">
-                            <a target=”_blank” href="https://www.amazon.com/">
-                                <img  class="fartext-primary position-absolute w-7  rounded-circle10 zoomlogo" src="img/amazon.jpg" style="top: 2px; left: -8%;"></img >
+                        <div class="timeline-item">
+                            <a target="_blank" rel="noopener" href="https://www.amazon.com/">
+                                <img class="timeline-logo" src="img/amazon.jpg" alt="Amazon" loading="lazy">
                             </a>
                                 <h5 class="font-weight-bold mb-1">Business Intelligence Engineer</h5>
-                            <p class="mb-2"><strong>Amazon</strong> | <small>November 2021 – September 2025</small></p>
-                            <p class ="text-justify">Improved outbound forecasts for EU warehouses by 3%. Developed item re-balancing process, optimizing storage and reducing costs. Satisfied stakeholder requests.</p>
+                            <p class="timeline-meta"><strong>Amazon</strong> | <small>November 2021 – September 2025</small></p>
+                            <ul class="timeline-list">
+                                <li>Improved outbound forecasts for EU warehouses by 3%.</li>
+                                <li>Developed item re-balancing process, optimizing storage and reducing costs.</li>
+                                <li>Satisfied stakeholder requests.</li>
+                            </ul>
                         </div>
-                        <div class="position-relative mb-4">
-                            <a target=”_blank” href="https://www.amazon.com/">
-                                <img  class="fartext-primary position-absolute w-7  rounded-circle10 zoomlogo" src="img/amazon.jpg" style="top: 2px; left: -8%;"></img >
+                        <div class="timeline-item">
+                            <a target="_blank" rel="noopener" href="https://www.amazon.com/">
+                                <img class="timeline-logo" src="img/amazon.jpg" alt="Amazon" loading="lazy">
                             </a>
                             <h5 class="font-weight-bold mb-1">Business Intelligence intern</h5>
-                            <p class="mb-2"><strong>Amazon</strong> | <small>March 2021 - August 2021 (6 months)</small></p>
-                            <p class ="text-justify">Enhanced Middle-miles Linehaul planning by integrating diverse data sources into the algorithm. Evaluated feasibility and performance, produced saving reports, and communicated with stakeholders.
-                                </p>
+                            <p class="timeline-meta"><strong>Amazon</strong> | <small>March 2021 - August 2021 (6 months)</small></p>
+                            <ul class="timeline-list">
+                                <li>Enhanced Middle-miles Linehaul planning by integrating diverse data sources into the algorithm.</li>
+                                <li>Evaluated feasibility and performance, produced saving reports, and communicated with stakeholders.</li>
+                            </ul>
                         </div>
-                        <div class="position-relative mb-4">
-                            <a target=”_blank” href="https://luggagehero.com/">
-                                <img  class="fartext-primary position-absolute w-7  rounded-circle10 zoomlogo" src="img/LH.jpg" style="top: 2px; left: -8%;"></img >
+                        <div class="timeline-item">
+                            <a target="_blank" rel="noopener" href="https://luggagehero.com/">
+                                <img class="timeline-logo" src="img/LH.jpg" alt="LuggageHero" loading="lazy">
                             </a>
                                 <h5 class="font-weight-bold mb-1">Data scientist intern</h5>
-                            <p class="mb-2"><strong>LuggageHero</strong> | <small>May 2020 – August 2020 (4 months) </small></p>
-                            <p class ="text-justify">Derived demand score from Google Maps API, Airbnb, Booking data. Helped partnership team pinpoint revenue per location with 85% accuracy. Created interactive maps.</p>
+                            <p class="timeline-meta"><strong>LuggageHero</strong> | <small>May 2020 – August 2020 (4 months) </small></p>
+                            <ul class="timeline-list">
+                                <li>Derived demand score from Google Maps API, Airbnb, Booking data.</li>
+                                <li>Helped partnership team pinpoint revenue per location with 85% accuracy.</li>
+                                <li>Created interactive maps.</li>
+                            </ul>
                         </div>
-                        <div class="position-relative mb-4">
-                            <a target=”_blank” href="https://www.teagasc.ie/">
-                                <img  class="fartext-primary position-absolute w-7 rounded-circle10 imglogo zoomlogo" src="img/Teagasc.jpg" style="top: 2px; left: -8%;"></img >
+                        <div class="timeline-item">
+                            <a target="_blank" rel="noopener" href="https://www.teagasc.ie/">
+                                <img class="timeline-logo" src="img/Teagasc.jpg" alt="Teagasc" loading="lazy">
                             </a>
                             <h5 class="font-weight-bold mb-1">Data Analyst Intern</h5>
-                            <p class="mb-2"><strong>Teagasc</strong> | <small>April – June 2018 (3 months)</small></p>
-                            <p class ="text-justify">Developed grass estimation model predicting cow intake (62% accuracy) and lameness detection using pedometer data, selecting logistic regression model (error rate: 21%).</p>
+                            <p class="timeline-meta"><strong>Teagasc</strong> | <small>April – June 2018 (3 months)</small></p>
+                            <ul class="timeline-list">
+                                <li>Developed grass estimation model predicting cow intake (62% accuracy).</li>
+                                <li>Developed lameness detection using pedometer data, selecting logistic regression model (error rate: 21%).</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -369,111 +380,98 @@
 
 
     <!-- Skill Start -->
-    <div class="container-fluid py-5" id="skill">
+    <div class="container-fluid section" id="skill">
         <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center" data-aos="fade-up">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
-                <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
+            <div class="section-head" data-aos="fade-up">
+                <span class="section-eyebrow">Compétences</span>
+                <h2 class="section-title">Ma boîte à outils</h2>
             </div>
-            <div class="row ">
-                
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">SQL</h6>
-                            <h6 class="font-weight-bold">95%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Python</h6>
-                            <h6 class="font-weight-bold">90%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">dbt</h6>
-                            <h6 class="font-weight-bold">85%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Metabase</h6>
-                            <h6 class="font-weight-bold">80%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Tableau</h6>
-                            <h6 class="font-weight-bold">95%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="row">
+                    <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="skill-card">
+                            <h3><i class="fa-solid fa-database"></i>Data engineering</h3>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">SQL</h6>
+                                    <h6>95%</h6>
+                                </div>
+                                <div class="progress"><div class="progress-bar bg-brand" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div></div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Python</h6>
+                                    <h6>90%</h6>
+                                </div>
+                                <div class="progress"><div class="progress-bar bg-brand" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">dbt</h6>
+                                    <h6>85%</h6>
+                                </div>
+                                <div class="progress"><div class="progress-bar bg-brand" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div></div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Data modeling</h6>
+                                    <h6>90%</h6>
+                                </div>
+                                <div class="progress"><div class="progress-bar bg-brand" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Warehouse / marts</h6>
+                                    <h6>85%</h6>
+                                </div>
+                                <div class="progress"><div class="progress-bar bg-brand" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Data modeling</h6>
-                            <h6 class="font-weight-bold">90%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Warehouse / marts</h6>
-                            <h6 class="font-weight-bold">85%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">QGIS</h6>
-                            <h6 class="font-weight-bold">70%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">VBA</h6>
-                            <h6 class="font-weight-bold">95%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="skill-card">
+                            <h3><i class="fa-solid fa-chart-column"></i>BI &amp; visualisation</h3>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Tableau</h6>
+                                    <h6>95%</h6>
+                                </div>
+                                <div class="progress"><div class="progress-bar bg-brand" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div></div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Metabase</h6>
+                                    <h6>80%</h6>
+                                </div>
+                                <div class="progress"><div class="progress-bar bg-brand" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div></div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">QGIS</h6>
+                                    <h6>70%</h6>
+                                </div>
+                                <div class="progress"><div class="progress-bar bg-brand" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div></div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Automation & workflow</h6>
-                            <h6 class="font-weight-bold">90%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="skill-card">
+                            <h3><i class="fa-solid fa-gears"></i>Automatisation</h3>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">VBA</h6>
+                                    <h6>95%</h6>
+                                </div>
+                                <div class="progress"><div class="progress-bar bg-brand" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div></div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Automation &amp; workflow</h6>
+                                    <h6>90%</h6>
+                                </div>
+                                <div class="progress"><div class="progress-bar bg-brand" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
+                            </div>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     </div>
@@ -543,98 +541,88 @@
 
 
     <!-- Portfolio Start -->
-    <div class="container-fluid pt-5 pb-3" id="portfolio">
+    <div class="container-fluid section section-alt" id="portfolio">
         <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center" data-aos="fade-up">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projects</h1>
-                <h1 class="position-absolute text-uppercase text-primary">My Portfolio</h1>
+            <div class="section-head" data-aos="fade-up">
+                <span class="section-eyebrow">Portfolio</span>
+                <h2 class="section-title">Projets sélectionnés</h2>
             </div>
             <div class="row">
                 <div class="col-12 text-center mb-2">
                     <ul class="list-inline mb-4" id="portfolio-flters">
-                        <li class="btn btn-sm btn-outline-primary m-1 active"  data-filter="*">All</li>
+                        <li class="btn btn-sm btn-outline-primary m-1 active" data-filter="*">Tous</li>
                         <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">R</li>
                         <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Python</li>
                         <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">SQL</li>
-                       <!--  <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Tableau</li>  -->
                     </ul>
                 </div>
             </div>
             <div class="row portfolio-container">
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/Streamlit.png" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a target=”_blank”  href="https://appglobal-nzp6ugqmnkamphn2yfamqh.streamlit.app/" > 
-                                <i class="fa fa-plus-circle text-white" aria-hidden="true" style="font-size: 75px;"></i>  
-                            <a></a>
-                                &#160;&#160;&#160;&#160;&#160;
-                            <a target=”_blank”  href="https://github.com/morgancab/Streamlit_global" >  
-                                <i class="fa fa-brands fa-github text-white" aria-hidden="true" style="font-size: 75px;"></i>  <br> 
-                                    
-                            </a>
+                    <article class="project-card">
+                        <div class="project-thumb"><img src="img/Streamlit.png" alt="Aperçu du projet Applications Streamlit" loading="lazy"></div>
+                        <div class="project-body">
+                            <h3>Applications Streamlit</h3>
+                            <p>Cartes interactives, météo en France et visualisations 3D réunies dans une application Streamlit.</p>
+                            <div class="project-tags"><span>Python</span><span>Streamlit</span></div>
+                            <div class="project-actions"><a class="btn btn-brand btn-sm" href="https://appglobal-nzp6ugqmnkamphn2yfamqh.streamlit.app/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square mr-1"></i> Voir le projet</a><a class="btn btn-outline-primary btn-sm" href="https://github.com/morgancab/Streamlit_global" target="_blank" rel="noopener"><i class="fab fa-github mr-1"></i> Code</a></div>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-Rshiny.png" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a target=”_blank”  href="https://morgancab.shinyapps.io/Viabill-ex/?_ga=2.232142742.801022353.1674679547-1033977115.1674679547" > 
-                                <i class="fa fa-plus-circle text-white" aria-hidden="true" style="font-size: 75px;"></i>  
-                            <a></a>
+                    <article class="project-card">
+                        <div class="project-thumb"><img src="img/portfolio-Rshiny.png" alt="Aperçu du projet Dashboard R Shiny" loading="lazy"></div>
+                        <div class="project-body">
+                            <h3>Dashboard R Shiny</h3>
+                            <p>Application R Shiny avec séries temporelles et répartitions, publiée sur shinyapps.io.</p>
+                            <div class="project-tags"><span>R</span><span>Shiny</span></div>
+                            <div class="project-actions"><a class="btn btn-brand btn-sm" href="https://morgancab.shinyapps.io/Viabill-ex/?_ga=2.232142742.801022353.1674679547-1033977115.1674679547" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square mr-1"></i> Voir le projet</a></div>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/SQL_portfolio.png" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a target=”_blank”  href="https://airport-sql.vercel.app/" > 
-                                <i class="fa fa-plus-circle text-white" aria-hidden="true" style="font-size: 75px;"></i>  
-                            <a></a>
-                                &#160;&#160;&#160;&#160;&#160;
-                            <a target=”_blank”  href="https://github.com/morgancab/Airport_SQL" >  
-                                <i class="fa fa-brands fa-github text-white" aria-hidden="true" style="font-size: 75px;"></i>  <br> 
-                                    
-                            </a>
+                    <article class="project-card">
+                        <div class="project-thumb"><img src="img/SQL_portfolio.png" alt="Aperçu du projet Explorateur SQL de vols" loading="lazy"></div>
+                        <div class="project-body">
+                            <h3>Explorateur SQL de vols</h3>
+                            <p>Requêtes SQL sur des données de vols aux États-Unis : compagnies, aéroports et départs.</p>
+                            <div class="project-tags"><span>SQL</span></div>
+                            <div class="project-actions"><a class="btn btn-brand btn-sm" href="https://airport-sql.vercel.app/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square mr-1"></i> Voir le projet</a><a class="btn btn-outline-primary btn-sm" href="https://github.com/morgancab/Airport_SQL" target="_blank" rel="noopener"><i class="fab fa-github mr-1"></i> Code</a></div>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/Portoflio-dash.png" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a target=”_blank”  href="https://dashboard-strasbourg-parking.onrender.com/" > 
-                                <i class="fa fa-plus-circle text-white" aria-hidden="true" style="font-size: 75px;"></i>  
-                            <a></a>
-                                &#160;&#160;&#160;&#160;&#160;
-                            <a target=”_blank”  href="https://github.com/morgancab/Dashboard_strasbourg_parking" >  
-                                <i class="fa fa-brands fa-github text-white" aria-hidden="true" style="font-size: 75px;"></i>  <br> 
-                                    
-                            </a>
+                    <article class="project-card">
+                        <div class="project-thumb"><img src="img/Portoflio-dash.png" alt="Aperçu du projet Parkings de Strasbourg" loading="lazy"></div>
+                        <div class="project-body">
+                            <h3>Parkings de Strasbourg</h3>
+                            <p>Tableau de bord de l'occupation des parkings de Strasbourg, avec cartographie des places libres.</p>
+                            <div class="project-tags"><span>Python</span><span>Plotly Dash</span></div>
+                            <div class="project-actions"><a class="btn btn-brand btn-sm" href="https://dashboard-strasbourg-parking.onrender.com/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square mr-1"></i> Voir le projet</a><a class="btn btn-outline-primary btn-sm" href="https://github.com/morgancab/Dashboard_strasbourg_parking" target="_blank" rel="noopener"><i class="fab fa-github mr-1"></i> Code</a></div>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-2.png" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a target=”_blank”  href="https://github.com/morgancab/happinness.git">
-                                <i class="fa fa-brands fa-github text-white" style="font-size: 75px;"></i>
-                            </a>
+                    <article class="project-card">
+                        <div class="project-thumb"><img src="img/portfolio-2.png" alt="Aperçu du projet Analyse de texte" loading="lazy"></div>
+                        <div class="project-body">
+                            <h3>Analyse de texte</h3>
+                            <p>Analyse textuelle et nuage de mots autour du thème du bonheur.</p>
+                            <div class="project-tags"><span>R</span><span>Text mining</span></div>
+                            <div class="project-actions"><a class="btn btn-outline-primary btn-sm" href="https://github.com/morgancab/happinness.git" target="_blank" rel="noopener"><i class="fab fa-github mr-1"></i> Code</a></div>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item ">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-geomunicipa.png" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a target=”_blank”  href="https://geo-mucipa.vercel.app/" > 
-                                <i class="fa fa-plus-circle text-white" aria-hidden="true" style="font-size: 75px;"></i>  
-                            <a></a>
+                    <article class="project-card">
+                        <div class="project-thumb"><img src="img/portfolio-geomunicipa.png" alt="Aperçu du projet GeoMunicipa" loading="lazy"></div>
+                        <div class="project-body">
+                            <h3>GeoMunicipa</h3>
+                            <p>Plateforme de cartographie et d'open data pour valoriser les données géographiques d'une ville.</p>
+                            <div class="project-tags"><span>Next.js</span><span>TypeScript</span></div>
+                            <div class="project-actions"><a class="btn btn-brand btn-sm" href="https://geo-mucipa.vercel.app/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square mr-1"></i> Voir le projet</a></div>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </div>
@@ -643,11 +631,11 @@
 
 
     <!-- Testimonial Start -->
-    <div class="container-fluid py-5" id="testimonial">
+    <div class="container-fluid section" id="testimonial">
         <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center" data-aos="fade-up">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Review</h1>
-                <h1 class="position-absolute text-uppercase text-primary"> references</h1>
+            <div class="section-head" data-aos="fade-up">
+                <span class="section-eyebrow">Références</span>
+                <h2 class="section-title">Ils parlent de mon travail</h2>
             </div>
             <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
                 <div class="col-lg-8">
@@ -655,7 +643,7 @@
                         <div class="text-center">
                             <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
                             <h4 class="font-weight-light mb-4">I highly recommend Morgan for his exceptional data analysis skills, including the development of a scoring system and interactive map. He effectively communicated complex results to non-technical team members. A valuable asset to any data analysis project.</h4>
-                            <a target=”_blank” href="https://www.linkedin.com/in/matiashejl/">
+                            <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/matiashejl/">
                                 <img class="img-fluid rounded-circle50 mx-auto mb-3" src="img/Matias.jpg" style="width: 80px; height: 80px;">
                             </a>
                             <h5 class="font-weight-bold m-0">Matias Hejl</h5>
@@ -665,7 +653,7 @@
                         <div class="text-center">
                             <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
                             <h4 class="font-weight-light mb-4">Morgan helped me a good bit with the data analysis  for the lameness paper and did a good job. It's always beneficial to have a skilled and knowledgeable support to collaborate with, especially when it comes to something as important as data analysis.</h4>
-                            <a target=”_blank” href="https://www.linkedin.com/in/niall-o-leary-%F0%9F%94%B8-9a3b9630/">
+                            <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/niall-o-leary-%F0%9F%94%B8-9a3b9630/">
                                 <img class="img-fluid rounded-circle50 mx-auto mb-3" src="img/Niall.jpg" style="width: 80px; height: 80px;">
                             </a>
                             <h5 class="font-weight-bold m-0">Niall O'Leary</h5>
@@ -675,7 +663,7 @@
                         <div class="text-center">
                             <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
                             <h4 class="font-weight-light mb-4">Morgan's exceptional data analysis skills, including the testing and analysis of the input in the linehaul prediction, were instrumental in identifying potential improvements for Amazon Transportation's expansion plan. Their contributions were highly valuable and they come highly recommended for future projects.</h4>
-                            <a target=”_blank” href="https://www.linkedin.com/in/marina-rinaldi-b97a7955/">
+                            <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/marina-rinaldi-b97a7955/">
                                 <img class="img-fluid rounded-circle50 mx-auto mb-3" src="img/Marina.jpg" style="width: 80px; height: 80px;">
                             </a>
                             <h5 class="font-weight-bold m-0">Marina Rinaldi</h5>
@@ -746,23 +734,26 @@
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-primary text-white mt-1 py-1 px-sm-3 px-md-5">
-        <div class="container text-center py-1">
-            <div class="d-flex justify-content-center py-1 mb-1">
-                <a class="btn btn-light btn-social mr-2" target=”_blank”  href="mailto:morgan2509@live.fr"><i class="fa fa-envelope"></i></a>
-                <a class="btn btn-light btn-social mr-2" target=”_blank”  href="https://www.linkedin.com/in/morgancab/"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-light btn-social" target=”_blank”  href="https://github.com/morgancab"><i class="fab fa-github"></i></a>
-            </div> 
-           </p>
+    <footer class="site-footer">
+        <div class="container">
+            <a class="footer-brand" href="#home"><span class="brand-mark">MC</span> Morgan Cabedoche</a>
+            <p>Data Analyst • BI Engineer • Paris</p>
+            <div>
+                <a class="btn btn-light btn-social" target="_blank" rel="noopener" href="mailto:morgan2509@live.fr" aria-label="Email"><i class="fa fa-envelope"></i></a>
+                <a class="btn btn-light btn-social" target="_blank" rel="noopener" href="https://www.linkedin.com/in/morgancab/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social" target="_blank" rel="noopener" href="https://github.com/morgancab" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="footer-copy">&copy; <span id="year">2026</span> Morgan Cabedoche. Tous droits réservés.</p>
         </div>
-    </div>
+    </footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
     <!-- Footer End -->
 
     <!-- Scroll to Bottom -->
     <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top" aria-label="Retour en haut"><i class="fa fa-angle-double-up"></i></a>
 
 
     <!-- JavaScript Libraries -->
@@ -778,6 +769,9 @@
     <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
+
+    <!-- Language switcher (must load before main.js so the typed text is translated) -->
+    <script src="js/i18n.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
